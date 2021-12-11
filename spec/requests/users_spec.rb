@@ -11,12 +11,8 @@ RSpec.describe 'Users', type: :request do
       expect(response).to render_template('index')
     end
 
-    it 'renders correct template' do
+    it 'not render correct template' do
       expect(response).to_not render_template('show')
-    end
-
-    it 'check for placeholder text' do
-      expect(response.body).to include('Users#index')
     end
 
     it 'check for placeholder text' do
@@ -35,7 +31,7 @@ RSpec.describe 'Users', type: :request do
       expect(response.body).to render_template('show')
     end
 
-    it 'renders correct template' do
+    it 'not render correct template' do
       expect(response).to_not render_template('index')
     end
 
