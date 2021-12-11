@@ -34,6 +34,12 @@
 - run `rails db:create` and `rails db:migrate` to create database.
 - run `rails s` and go to http:localhost:3000 to view the app.
 
+## Run tests
+
+- install npm with `npm i`
+- install rspec with `bundle install` and `rails generate rspec:install`
+- run the test with `rspec spec`
+
 ## Author
 
 👤 **Elmar Abdulkarimov**
