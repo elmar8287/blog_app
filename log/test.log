@@ -398,3 +398,644 @@ Processing by UsersController#show as HTML
   Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
 Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.4ms | Allocations: 244)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3717)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 412)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 78)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 606)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:22:33 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.4ms | Allocations: 244)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 3717)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 412)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.4ms | Allocations: 79)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 608)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.4ms | Allocations: 81)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1042)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 78)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 600)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.1ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:23:32 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.3ms | Allocations: 244)
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 3717)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 412)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.4ms | Allocations: 79)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 608)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.3ms | Allocations: 81)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1042)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 78)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 600)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:24 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.2ms | Allocations: 244)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 3717)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 412)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.1ms | Allocations: 78)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 606)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.1ms | Allocations: 82)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1043)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 78)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 600)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:24:34 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.4ms | Allocations: 244)
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 3717)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 412)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"365"}
+  Rendering posts/index.html.erb
+  Rendered posts/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.3ms | Allocations: 78)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 606)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365/posts/10" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering posts/show.html.erb
+  Rendered posts/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.3ms | Allocations: 81)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1042)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.1ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb
+  Rendered users/index.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.2ms | Allocations: 78)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 600)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/365" for 127.0.0.1 at 2021-12-11 21:25:02 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"365"}
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 411)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
