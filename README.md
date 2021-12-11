@@ -11,9 +11,9 @@
 
 ## Project milestones:
 
-- Project 1: Setup and controllers. 🚩​🚩​🚩 (current milestone)
-- Project 2: Controllers specs.
-- Project 3: Creating a data model.
+- Project 1: Setup and controllers. 
+- Project 2: Controllers specs.  
+- Project 3: Creating a data model.  🚩​🚩​🚩 (current milestone)
 - Project 4: Processing data in models.
 - Project 5: Views.
 - Project 6: Forms
@@ -33,6 +33,12 @@
 - run `yarn install` to install all dependencies
 - run `rails db:create` and `rails db:migrate` to create database.
 - run `rails s` and go to http:localhost:3000 to view the app.
+
+## Run tests
+
+- install npm with `npm i`
+- install rspec with `bundle install` and `rails generate rspec:install`
+- run the test with `rspec spec`
 
 ## Author
 
