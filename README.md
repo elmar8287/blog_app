@@ -26,9 +26,13 @@
 
 ## Getting Started
 
-### Setup
+- make sure you have Ruby and Postgresql installed on your system.
+- install rails by running `gem install rails`
 - git clone https://github.com/elmar8287/blog_app.git
 - cd ./blog_app
+- run `yarn install` to install all dependencies
+- run `rails db:create` and `rails db:migrate` to create database.
+- run `rails s` and go to http:localhost:3000 to view the app.
 
 ## Author
 
