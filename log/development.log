@@ -18,3 +18,10 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4214)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-11 19:58:56 +0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/elmar/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/elmar/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 223)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 957)
+
+
