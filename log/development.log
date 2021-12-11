@@ -32,3 +32,30 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 9ms (Views: 7.6ms | Allocations: 958)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-11 21:35:15 +0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/elmar/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/elmar/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.3ms | Allocations: 228)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 957)
+
+
+Started GET "/user" for 127.0.0.1 at 2021-12-11 21:35:25 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/user/" for 127.0.0.1 at 2021-12-11 21:35:40 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/user/post" for 127.0.0.1 at 2021-12-11 21:35:44 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/post"):
+  
+Started GET "/user/posts" for 127.0.0.1 at 2021-12-11 21:35:48 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/posts"):
+  
+Started GET "/user/id" for 127.0.0.1 at 2021-12-11 21:36:04 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/id"):
+  
