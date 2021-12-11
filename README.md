@@ -11,8 +11,8 @@
 
 ## Project milestones:
 
-- Project 1: Setup and controllers. 🚩​🚩​🚩 (current milestone)
-- Project 2: Controllers specs.
+- Project 1: Setup and controllers. 
+- Project 2: Controllers specs.  🚩​🚩​🚩 (current milestone)
 - Project 3: Creating a data model.
 - Project 4: Processing data in models.
 - Project 5: Views.
