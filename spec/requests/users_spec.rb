@@ -16,11 +16,11 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'check for placeholder text' do
-      expect(response.body).to include('All Users')
+      expect(response.body).to include('Users#index')
     end
 
     it 'check for placeholder text' do
-      expect(response.body).to include('Here is a list of all users')
+      expect(response.body).to include('Users#index')
     end
   end
 
@@ -40,11 +40,11 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'check for placeholder text' do
-      expect(response.body).to include('Users ID 365')
+      expect(response.body).to include('Users#show')
     end
 
     it 'check for placeholder text' do
-      expect(response.body).to include('Details of the user')
+      expect(response.body).to include('Users#show')
     end
   end
 end
