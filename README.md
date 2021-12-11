@@ -1,24 +1,61 @@
-# README
+# The `Blog Application` on RoR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> The Blog app is a classic example of a blog website. Here created a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-Things you may want to cover:
+### Build with:
 
-* Ruby version
+- Ruby
+- Rails
+- Postgres
+- Front end stack
 
-* System dependencies
+## Project milestones:
 
-* Configuration
+- Project 1: Setup and controllers. 🚩​🚩​🚩 (current milestone)
+- Project 2: Controllers specs.
+- Project 3: Creating a data model.
+- Project 4: Processing data in models.
+- Project 5: Views.
+- Project 6: Forms
+- Project 7: Validations, Model specs, and n+1 problems.
+- Project 8: Add Devise.
+- Project 9: Add authorization rules.
+- Project 10: Integration specs for Views.
+- Project 11: Add API endpoints.
+- Exercise: API documentation.
 
-* Database creation
+## Getting Started
 
-* Database initialization
+- make sure you have Ruby and Postgresql installed on your system.
+- install rails by running `gem install rails`
+- git clone https://github.com/elmar8287/blog_app.git
+- cd ./blog_app
+- run `yarn install` to install all dependencies
+- run `rails db:create` and `rails db:migrate` to create database.
+- run `rails s` and go to http:localhost:3000 to view the app.
 
-* How to run the test suite
+## Author
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Elmar Abdulkarimov**
 
-* Deployment instructions
+- GitHub: [Elmar Abdulkarimov](https://github.com/elmar8287)
 
-* ...
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
