@@ -6,7 +6,7 @@
 
 - Ruby
 - Rails
-- Postgres
+- PostgreSQL
 - Front end stack
 
 ## Project milestones:
