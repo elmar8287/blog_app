@@ -2044,3 +2044,452 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 1.3ms | Allocations: 2752)
 
 
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:02:28 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2704)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.0ms | Allocations: 3923)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:03:56 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2703)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 1.3ms | Allocations: 3918)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:04:41 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6665)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.1ms | Allocations: 7844)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x000000000123e0>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= link_to about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:05:29 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1032)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 6666)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.9ms | Allocations: 7850)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000012890>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:05:30 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6239)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.2ms | Allocations: 6656)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000012c78>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:05:30 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 6239)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms | Allocations: 6655)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000012f48>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:06:52 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6338)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms | Allocations: 8802)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000013fd8>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:06:53 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 6239)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.1ms | Allocations: 6655)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x000000000142a8>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:06:54 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 6239)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.4ms | Allocations: 6655)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000014578>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:06:54 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6239)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms | Allocations: 6655)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000014848>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:06:54 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 6239)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.1ms | Allocations: 6655)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000014b18>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:08:06 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 6338)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms | Allocations: 8803)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000015ba8>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:08:07 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6239)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.9ms | Allocations: 6655)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000015e78>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:09:18 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1035)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 6652)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.7ms | Allocations: 7836)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_about_path' for #<ActionView::Base:0x00000000016210>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= pages_about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:09:19 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 6221)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.6ms | Allocations: 6638)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_about_path' for #<ActionView::Base:0x00000000016788>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= pages_about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:09:20 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 864)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 6225)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.3ms | Allocations: 6641)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_about_path' for #<ActionView::Base:0x00000000016a58>):
+    27:               <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <a class="nav-link" href="<%= pages_about_path%>">About project</a>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">Contacts</a>
+  
+app/views/layouts/application.html.erb:30
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:19:37 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 24.0ms | Allocations: 5467)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 7144)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 15.6ms | Allocations: 10249)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:21:18 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2704)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 1.6ms | Allocations: 3919)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:21:56 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2704)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.2ms | Allocations: 3920)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:22:30 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2704)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.9ms | Allocations: 3920)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:22:42 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2703)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 1.0ms | Allocations: 3919)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-12-16 10:26:26 +0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2703)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 1.7ms | Allocations: 3919)
+
+
+Started GET "/users/id" for 127.0.0.1 at 2021-12-16 10:26:42 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+Completed 404 Not Found in 32ms (ActiveRecord: 24.3ms | Allocations: 2718)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-16 10:26:45 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"id"}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/posts_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-16 22:48:21 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"id"}
+Completed 404 Not Found in 5ms (Allocations: 612)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/posts_controller.rb:3:in `index'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-17 20:29:42 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"id"}
+Completed 404 Not Found in 10ms (Allocations: 612)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/posts_controller.rb:3:in `index'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-17 20:35:11 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"id"}
+Completed 404 Not Found in 2ms (Allocations: 612)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/posts_controller.rb:3:in `index'
