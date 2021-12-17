@@ -1,2 +1,18 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div>
+  <div>
+    <%= render partial: "users/user_details", locals: { user: @user } %>
+  </div>
+
+  <div>
+    <% @posts.each do |p| %>
+    <ul>
+      <li>
+        <%= render partial: "post_details", locals: { post: p } %>
+      </li>
+    </ul>
+      <%= render partial: "comments_section", locals: { comments: p.recent_comments } %>
+    <% end %>
+  </div>
+
+  <button type="button">Pagination</button>
+</div>
