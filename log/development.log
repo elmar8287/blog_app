@@ -2493,3 +2493,13 @@ Completed 404 Not Found in 2ms (Allocations: 612)
 ActiveRecord::RecordNotFound (Couldn't find User without an ID):
   
 app/controllers/posts_controller.rb:3:in `index'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-17 21:25:03 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"id"}
+Completed 404 Not Found in 51ms (ActiveRecord: 19.5ms | Allocations: 6612)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/posts_controller.rb:3:in `index'
