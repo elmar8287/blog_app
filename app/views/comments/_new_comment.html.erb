@@ -1,0 +1,16 @@
+<div>
+<form action="/users/<%=params[:user_id]%>/posts/<%=params[:id]%>/comments" method="POST">
+  <%= csrf_meta_tags %>
+  <div>
+    <label>Write your comment</label><br>
+    <textarea name="text"></textarea>
+  </div>
+  <div>
+    <div>
+      <div>
+        <buttontype="submit">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>

@@ -11,4 +11,5 @@
     <p><%= @post.text %> </p>
   </div>
     <%= render partial: "comments_section", locals: { comments: @post.comments } %>
+    <%= render partial: "comments/new_comment" %>
 </div>
