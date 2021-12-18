@@ -2503,3 +2503,51 @@ Completed 404 Not Found in 51ms (ActiveRecord: 19.5ms | Allocations: 6612)
 ActiveRecord::RecordNotFound (Couldn't find User without an ID):
   
 app/controllers/posts_controller.rb:3:in `index'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-18 01:33:33 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"id"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+Completed 404 Not Found in 39ms (ActiveRecord: 18.2ms | Allocations: 7777)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/posts_controller.rb:3:in `index'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-18 01:33:36 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"id"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+Completed 404 Not Found in 7ms (ActiveRecord: 1.2ms | Allocations: 1245)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/posts_controller.rb:3:in `index'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-18 01:33:37 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"id"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms | Allocations: 1245)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/posts_controller.rb:3:in `index'
+Started GET "/users/id/posts" for 127.0.0.1 at 2021-12-18 01:35:56 +0400
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"id"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+Completed 404 Not Found in 35ms (ActiveRecord: 29.1ms | Allocations: 4356)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/posts_controller.rb:3:in `index'
