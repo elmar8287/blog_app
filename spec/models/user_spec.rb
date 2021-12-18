@@ -1,5 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'Validation for users' do
+    subject { User.new(name: 'Elik', bio: 'Elik bio', posts_counter: 1) }
+
+    before { subject.save }
+
+    it 'Is bio true' do
+      subject.bio = 'Elik bio'
+      expect(subject).to be_valid
+    end
+  end
 end
