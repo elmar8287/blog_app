@@ -1,2 +1,16 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div>
+  <div>
+    <h1>User`s Bio</h1>
+    <p> <%= @user.bio %> </p>
+  </div>
+  <ul>
+    <% @user.recent_posts.each do |post| %>
+      <li>
+        <%= render partial: "posts/post_details", locals: { post: post } %>
+      </li>
+    <% end %>
+  </ul>
+  <div>
+    <%= link_to "See all posts", user_posts_path(@user), class: "btn btn-primary %>
+  <div>
+</div>
