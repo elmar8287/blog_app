@@ -16,8 +16,8 @@
 - Project 3: Creating a data model.  
 - Project 4: Processing data in models.  
 - Project 5: Views.
-- Project 6: Forms.  🚩​🚩​🚩 (current milestone)
-- Project 7: Validations, Model specs, and n+1 problems.
+- Project 6: Forms.  
+- Project 7: Validations, Model specs, and n+1 problems. 🚩​🚩​🚩 (current milestone)
 - Project 8: Add Devise.
 - Project 9: Add authorization rules.
 - Project 10: Integration specs for Views.
