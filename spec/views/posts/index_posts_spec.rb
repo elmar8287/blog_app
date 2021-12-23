@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+# rubocop:disable Metrics/BlockLength
 RSpec.feature 'Post #Index', type: :feature do
   background do
     visit new_user_session_path
@@ -7,7 +7,7 @@ RSpec.feature 'Post #Index', type: :feature do
     @user1 = User.create(name: 'Elik', bio: 'Here is short bio',
                          photo: 'https://www.w3schools.com/w3images/avatar2.png',
                          email: 'L-mar@inbox.ru', password: 'password', confirmed_at: Time.now)
-    
+
     within 'form' do
       fill_in 'Email', with: @user1.email
       fill_in 'Password', with: @user1.password
@@ -62,4 +62,5 @@ RSpec.feature 'Post #Index', type: :feature do
     find("a[href='#{user_post_path(@user1.id, @post.id)}']").click
     expect(page).to have_current_path(user_post_path(@user1.id, @post.id))
   end
+  # rubocop:enable Metrics/BlockLength
 end

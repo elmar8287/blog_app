@@ -1,4 +1,5 @@
 require 'rails_helper'
+# rubocop:disable Metrics/BlockLength
 RSpec.feature 'Posts #Show', type: :feature do
   background do
     visit new_user_session_path
@@ -67,4 +68,5 @@ RSpec.feature 'Posts #Show', type: :feature do
     find("a[href='#{user_post_path(@user1.id, @post.id)}']").click
     expect(page).to have_content @comment1.text
   end
+  # rubocop:enable Metrics/BlockLength
 end

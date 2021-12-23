@@ -1,12 +1,11 @@
 require 'rails_helper'
-# rubocop:disable Metrics/BlockLength
 RSpec.feature 'Users Page' do
   feature 'shows users' do
     background do
       visit new_user_session_path
       @user1 = User.create(name: 'Elik', bio: 'Here is short bio',
-                         photo: 'https://www.w3schools.com/w3images/avatar2.png',
-                         email: 'L-mar@inbox.ru', password: 'password', confirmed_at: Time.now)
+                           photo: 'https://www.w3schools.com/w3images/avatar2.png',
+                           email: 'L-mar@inbox.ru', password: 'password', confirmed_at: Time.now)
 
       within 'form' do
         fill_in 'Email', with: @user1.email

@@ -1,4 +1,5 @@
 require 'rails_helper'
+# rubocop:disable Metrics/BlockLength
 RSpec.feature 'Logins', type: :feature do
   background { visit new_user_session_path }
   scenario 'displays email field' do
@@ -35,4 +36,5 @@ RSpec.feature 'Logins', type: :feature do
       expect(page).to have_content 'Successfully signed.'
     end
   end
+  # rubocop:enable Metrics/BlockLength
 end
