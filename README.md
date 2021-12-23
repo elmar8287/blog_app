@@ -19,7 +19,7 @@
 - Project 6: Forms.  
 - Project 7: Validations, Model specs, and n+1 problems. milestone)
 - Project 8: Add Devise. 
-- Project 9: Add authorization rules. 🚩​🚩​🚩 (current 
+- Project 9: Add authorization rules.  🚩​🚩​🚩 (current 
 - Project 10: Integration specs for Views.
 - Project 11: Add API endpoints.
 - Exercise: API documentation.
