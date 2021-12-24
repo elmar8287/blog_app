@@ -31,7 +31,7 @@ RSpec.configure do |config|
   end
 
   config.before(:each, js: true) do
-    DatabaseCleaner.strategy = 
+    DatabaseCleaner.strategy = :truncation
   end
 
   # This block must be here, do not combine with the other `before(:each)` block.
