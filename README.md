@@ -17,10 +17,10 @@
 - Project 4: Processing data in models.  
 - Project 5: Views.
 - Project 6: Forms.  
-- Project 7: Validations, Model specs, and n+1 problems. milestone)
+- Project 7: Validations, Model specs, and n+1 problems. 
 - Project 8: Add Devise. 
-- Project 9: Add authorization rules.  🚩​🚩​🚩 (current 
-- Project 10: Integration specs for Views.
+- Project 9: Add authorization rules.  
+- Project 10: Integration specs for Views. 🚩​🚩​🚩 (current milestone)
 - Project 11: Add API endpoints.
 - Exercise: API documentation.
 
