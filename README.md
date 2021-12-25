@@ -20,8 +20,8 @@
 - Project 7: Validations, Model specs, and n+1 problems. 
 - Project 8: Add Devise. 
 - Project 9: Add authorization rules.  
-- Project 10: Integration specs for Views. 🚩​🚩​🚩 (current milestone)
-- Project 11: Add API endpoints.
+- Project 10: Integration specs for Views. 
+- Project 11: Add API endpoints.  🚩​🚩​🚩 (current milestone)
 - Exercise: API documentation.
 
 ## Getting Started
