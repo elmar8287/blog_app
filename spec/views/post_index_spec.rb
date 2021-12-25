@@ -4,9 +4,9 @@ RSpec.describe 'showing the list of user\'s last published posts', type: :featur
     before do
       visit new_user_session_path
       @elik = User.create(name: 'Elik', bio: 'Bla bla', email: 'elik@mail.com',
-                           password: '123456', password_confirmation: '123456', confirmed_at: Date.today)
+                          password: '123456', password_confirmation: '123456', confirmed_at: Date.today)
       @velik = User.create(name: 'Velik', bio: 'Bla bla', email: 'velik@mail.com', password: '123456',
-                          password_confirmation: '123456', confirmed_at: Date.today)
+                           password_confirmation: '123456', confirmed_at: Date.today)
 
       5.times do |j|
         post = Post.create(title: "Post ##{j + 1}", text: "#{j + 1}Lorem ipsum dolor set amet.", author: @elik)

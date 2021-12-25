@@ -4,7 +4,7 @@ RSpec.describe 'list of users with information about the posts they wrote', type
     before do
       visit new_user_session_path
       elik = User.create(name: 'elik', bio: 'elik is a frontend developer', email: 'elik@mail.com',
-                          password: '123456', password_confirmation: '123456', confirmed_at: Date.today)
+                         password: '123456', password_confirmation: '123456', confirmed_at: Date.today)
       User.create(name: 'velik', bio: 'velik is a backend developer', email: 'velik@mail.com', password: '123456',
                   password_confirmation: '123456', confirmed_at: Date.today)
 
