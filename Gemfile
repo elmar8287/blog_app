@@ -32,6 +32,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # session and account manager for the application
 gem 'devise'
 
+gem 'devise-jwt'
+gem 'rack-cors'
+
 # authorization manager
 gem 'cancancan'
 
