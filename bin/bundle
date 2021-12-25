@@ -6,7 +6,7 @@
 #
 # The application 'bundle' is installed as part of a gem, and
 # this file is here to facilitate running it.
-#
+# rubocop:disable all
 
 require 'rubygems'
 
@@ -62,16 +62,16 @@ m = Module.new do
     Regexp.last_match(1)
   end
 
-  def bundler_version
-    @bundler_version ||=
+  def bundler_requirement
+    @bundler_requirement ||=
       env_var_version || cli_arg_version ||
-      lockfile_version
+      bundler_requirement_for(lockfile_version)
   end
 
-  def bundler_requirement
-    return "#{Gem::Requirement.default}.a" unless bundler_version
+  def bundler_requirement_for(version)
+    return "#{Gem::Requirement.default}.a" unless version
 
-    bundler_gem_version = Gem::Version.new(bundler_version)
+    bundler_gem_version = Gem::Version.new(version)
 
     requirement = bundler_gem_version.approximate_recommendation
 
@@ -87,7 +87,8 @@ m = Module.new do
 
     activate_bundler
   end
-
+  
+  
   def activate_bundler
     gem_error = activation_error_handling do
       gem 'bundler', bundler_requirement

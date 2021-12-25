@@ -1,0 +1,9 @@
+<article class="user">
+    <img src="<%= user.photo %>" class="users-image">
+    <div class="users-info">
+      <%= link_to user_path(user.id) do %>
+        <span class="username"><%= user.name %></span>
+      <% end %>
+      <div class="user-posts">Number of posts: <span class="post-count"><%= user.posts_counter ? user.posts_counter : 0 %></span></div>
+    </div>
+</article>
