@@ -1,0 +1,6 @@
+<header class="header">
+  <%= link_to "Blog", root_path %>
+  <%= link_to "New post", user_posts_path(1)+'/new', class:"new-post" %>
+  <div>User: <%= current_user.name %></div> 
+  <%= button_to "LogOut", destroy_user_session_path, method: :delete,  class:"btn btn-danger" %>
+</header>

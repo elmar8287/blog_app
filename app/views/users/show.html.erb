@@ -1,16 +1,18 @@
-<div>
-  <div>
-    <h1>User`s Bio</h1>
-    <p> <%= @user.bio %> </p>
-  </div>
-  <ul>
-    <% @user.recent_posts.each do |post| %>
-      <li>
-        <%= render partial: "posts/post_details", locals: { post: post } %>
-      </li>
-    <% end %>
-  </ul>
-  <div>
-    <%= link_to "See all posts", user_posts_path(@user), class: "btn btn-primary %>
-  <div>
+<%= render partial: 'shared/header' %>
+
+<%= render partial: 'user', locals: {user: @user} %>
+<div class="bio">
+<h2>Bio</h2>
+<p>
+  <%= @user.bio %>
+</p>
 </div>
+
+
+<ul class="posts wo-comments">
+  <% @user_posts.each do |post| %>
+    <%= render partial:'posts/post', locals:{post: post, users: @users, comments: @comments}%>
+  <% end %>
+</ul>
+
+<%= link_to "See all post", user_posts_path(@user.id) %>

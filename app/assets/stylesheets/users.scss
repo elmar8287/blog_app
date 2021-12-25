@@ -1,3 +1,32 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.users-image {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+}
+
+.user {
+  display: flex;
+  margin: 2rem 0;
+
+  .username {
+    font-size: 2rem;
+  }
+
+  .users-info {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .user-posts {
+    align-self: flex-end;
+    font-size: 0.8rem;
+    color: rgb(87, 85, 85);
+  }
+}
+
+.wo-comments .comments {
+  display: none;
+}
