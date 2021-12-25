@@ -375,3 +375,482 @@ FOREIGN KEY ("author_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-12-26 00:56:34 +0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms | Allocations: 5129)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 00:56:34 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 801)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3886)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.17
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+warning ../../package.json: No license field
+warning ../../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 609.3ms | Allocations: 26202)
+Completed 200 OK in 638ms (Views: 612.6ms | ActiveRecord: 16.2ms | Allocations: 38507)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-12-26 00:56:44 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 237)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 255)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6667)
+Completed 200 OK in 35ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 8297)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-26 00:56:59 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elmar", "bio"=>"test", "email"=>"l-mar@inbox.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (3.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "bio", "created_at", "updated_at", "email", "encrypted_password", "confirmation_token", "confirmation_sent_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Elmar"], ["bio", "test"], ["created_at", "2021-12-25 20:56:59.410179"], ["updated_at", "2021-12-25 20:56:59.410179"], ["email", "l-mar@inbox.ru"], ["encrypted_password", "$2a$12$5RxOeZvRI.df4EPfHRpvbuQJ8mToLnASObX.QzVxc9naLBcB70qAK"], ["confirmation_token", "25VxGQqd7U1DxeWo1FCm"], ["confirmation_sent_at", "2021-12-25 20:56:59.410270"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.3ms | Allocations: 359)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 7.7ms
+Delivered mail 61c7859b6b6bc_f1f24b78733be@Elmars-MacBook-Air.local.mail (16.2ms)
+Date: Sun, 26 Dec 2021 00:56:59 +0400
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: l-mar@inbox.ru
+Message-ID: <61c7859b6b6bc_f1f24b78733be@Elmars-MacBook-Air.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome l-mar@inbox.ru!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=25VxGQqd7U1DxeWo1FCm">Confirm my account</a></p>
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 326ms (ActiveRecord: 5.2ms | Allocations: 25304)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-26 00:56:59 +0400
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 00:56:59 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 223)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4801)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 5562)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 00:57:24 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"l-mar@inbox.ru", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 313ms (ActiveRecord: 2.0ms | Allocations: 5758)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 00:57:24 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 223)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4803)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 5611)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 00:58:41 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"l-mar@inbox.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 286ms (ActiveRecord: 1.9ms | Allocations: 1900)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"l-mar@inbox.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4614)
+Completed 200 OK in 252ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 5273)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2021-12-26 01:00:03 +0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 61)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 244)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1301)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 4972)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 6564)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2021-12-26 01:00:05 +0400
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"l-mar@inbox.ru"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "76781c3fe84987f8cb6285acca0c749ce55d7c0c6604752791aca952cc989899"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_password_token" = $2, "reset_password_sent_at" = $3 WHERE "users"."id" = $4[0m  [["updated_at", "2021-12-25 21:00:05.943625"], ["reset_password_token", "76781c3fe84987f8cb6285acca0c749ce55d7c0c6604752791aca952cc989899"], ["reset_password_sent_at", "2021-12-25 21:00:05.943472"], ["id", 8]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 0.5ms | Allocations: 271)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 2.6ms
+Delivered mail 61c78655e89cb_f1f24fc4734d5@Elmars-MacBook-Air.local.mail (8.0ms)
+Date: Sun, 26 Dec 2021 01:00:05 +0400
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: l-mar@inbox.ru
+Message-ID: <61c78655e89cb_f1f24fc4734d5@Elmars-MacBook-Air.local.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello l-mar@inbox.ru!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=fGVjVH22hyikM3qVDnx6">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://127.0.0.1:3000/users/sign_in
+Completed 302 Found in 138ms (ActiveRecord: 6.1ms | Allocations: 11555)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:00:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1087)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 4624)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5326)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:00:38 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"L-mar@inbox.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 296ms (ActiveRecord: 2.5ms | Allocations: 2065)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:00:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4617)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 5313)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-12-26 01:01:25 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 162)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 5019)
+Completed 200 OK in 34ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 5660)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-26 01:02:18 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elmar", "bio"=>"test", "email"=>"l-mar@inbox.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.4ms | Allocations: 576)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 162)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2542)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 6020)
+Completed 200 OK in 309ms (Views: 15.6ms | ActiveRecord: 3.2ms | Allocations: 11379)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-26 01:02:38 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"AES", "bio"=>"test", "email"=>"l-mar@inbox.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 462)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 162)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2422)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 5891)
+Completed 200 OK in 302ms (Views: 13.2ms | ActiveRecord: 1.6ms | Allocations: 11158)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-26 01:02:57 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"AES", "bio"=>"test", "email"=>"l-mar@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (15.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "l-mar@mail.ru"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "bio", "created_at", "updated_at", "email", "encrypted_password", "confirmation_token", "confirmation_sent_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "AES"], ["bio", "test"], ["created_at", "2021-12-25 21:02:58.271428"], ["updated_at", "2021-12-25 21:02:58.271428"], ["email", "l-mar@mail.ru"], ["encrypted_password", "$2a$12$.gJjUvKvLG0L7L8fE3ZzSOcOHUqhbRnuyeyvvtsWu1IX84kCz7Y/G"], ["confirmation_token", "CjDxG74fzG6e6UWe-muX"], ["confirmation_sent_at", "2021-12-25 21:02:58.271485"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.2ms | Allocations: 107)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.1ms
+Delivered mail 61c7870244563_f1f24b78735af@Elmars-MacBook-Air.local.mail (11.5ms)
+Date: Sun, 26 Dec 2021 01:02:58 +0400
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: l-mar@mail.ru
+Message-ID: <61c7870244563_f1f24b78735af@Elmars-MacBook-Air.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome l-mar@mail.ru!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=CjDxG74fzG6e6UWe-muX">Confirm my account</a></p>
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 319ms (ActiveRecord: 17.4ms | Allocations: 9721)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-26 01:02:58 +0400
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 255)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:02:58 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4617)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5312)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:03:15 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"l-mar@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "l-mar@mail.ru"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 295ms (ActiveRecord: 1.7ms | Allocations: 2030)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:03:16 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4617)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5313)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:03:43 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "elik@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 15ms (ActiveRecord: 2.7ms | Allocations: 1675)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1073)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4607)
+Completed 200 OK in 285ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 5255)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:03:50 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "elik@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.0ms | Allocations: 1686)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1072)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4610)
+Completed 200 OK in 286ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5262)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:04:22 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "elik@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 22ms (ActiveRecord: 1.7ms | Allocations: 1671)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1072)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4614)
+Completed 200 OK in 288ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5262)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:04:27 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"velik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "velik@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.2ms | Allocations: 1670)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"velik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1072)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4606)
+Completed 200 OK in 298ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 5254)
+
+
+Started GET "/users/confirmation/new.user" for 127.0.0.1 at 2021-12-26 01:04:33 +0400
+Processing by Devise::ConfirmationsController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 61)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered devise/confirmations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1586)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5271)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 6802)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:04:46 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 220)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1092)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 4616)
+Completed 200 OK in 42ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 5390)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:04:55 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "elik@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 11ms (ActiveRecord: 3.4ms | Allocations: 1854)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"elik@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1073)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4617)
+Completed 200 OK in 286ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5284)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-26 01:06:16 +0400
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:06:16 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4609)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 5304)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-12-26 01:06:22 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 162)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 5019)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 5660)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:06:25 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 4611)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 5298)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:06:34 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"l-mar@inbox.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "l-mar@inbox.ru"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 309ms (ActiveRecord: 1.9ms | Allocations: 2102)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-26 01:06:34 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4617)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 5314)
+
+

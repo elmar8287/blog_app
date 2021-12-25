@@ -2,7 +2,7 @@
 
 # RSpec.describe User, type: :model do
 #   describe 'GET /index' do
-#     subject { User.new(name: 'Tolib', photo: 'no photo', bio: 'Student learning Ruby on Rails') }
+#     subject { User.new(name: 'elik', photo: 'no photo', bio: 'Student learning Ruby on Rails') }
 #     before { subject.save }
 
 #     it 'Name must not be blank' do
