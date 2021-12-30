@@ -4,8 +4,7 @@
 
 ### Build with:
 
-- Ruby
-- Rails
+- Ruby on Rails
 - PostgreSQL
 - Front end stack
 
